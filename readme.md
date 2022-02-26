@@ -23,7 +23,7 @@ I have quite a few other ideas and sketches before finally landing on this one. 
 
 **1. Black & Hispanic Student Performance and Segregation** 
 
-![IMG_1826.jpg](Blog%20Post%2038aea/IMG_1826.jpg)
+![IMG_1826.jpg](https://github.com/EugeniaYang/SI649/raw/main/Blog%20Post%2038aea/IMG_1826.jpg)
 
 In this first plot, I would like to look into how the percentage of black and Hispanic students in the school may affect the black and Hispanic students’ academic performance. However, during my implementation, I find that it is very difficult to deal with the values that are noted with ‘s’, which means that the students’ number is too small to be a convincing sample. Considering the fact that those smaller samples can also influence the overall result, I decide not to use this one.
 
