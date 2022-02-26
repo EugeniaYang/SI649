@@ -149,9 +149,16 @@ vis2 = (eco_line1+ event_bar).resolve_scale(y='independent') |(eco_line2+ event_
 
 st.title("Visualizations by Eugenia Yang")
 st.sidebar.markdown("Select a visualization to display")
-option = st.sidebar.selectbox("Graduation and dropout rates 2003-2016",['By ethnicity','By economical status'])
+option = st.sidebar.selectbox("Graduation and dropout rates 2003-2016",['By ethnicity','By economical status','Blog Post'])
+from pathlib import Path
 
+def read_markdown_file(markdown_file):
+    return Path(markdown_file).read_text()
+
+blog_post = read_markdown_file("Blog Post 38aea.md")
 if option == 'By economical status':
     st.write(vis2)
-else :
+elif option == 'By ethnicity':
     st.write(vis1)
+else :
+    st.markdown(blog_post)

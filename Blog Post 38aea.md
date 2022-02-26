@@ -1,8 +1,7 @@
-# Blog Post
-
-February 25, 2022 
 
 # How do ethnicity, poverty, and historical events influence education? — Visualization on NYC Graduation & Dropout Rates in 21st Century
+
+February 25, 2022
 
 As part of my coursework in information visualization class, I read [this article](https://www.nytimes.com/2016/06/12/magazine/choosing-a-school-for-my-daughter-in-a-segregated-city.html) about racial segregation in New York City schools and the impact it has on students as well as related historical topics and changes.
 
