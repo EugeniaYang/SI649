@@ -3,6 +3,8 @@
 
 February 25, 2022
 
+The original [blog post](https://www.notion.so/How-do-ethnicity-poverty-and-historical-events-influence-education-Visualization-on-NYC-Graduat-3b858da41ac14b32a5a976740cb5e1ef) is here! 
+
 As part of my coursework in information visualization class, I read [this article](https://www.nytimes.com/2016/06/12/magazine/choosing-a-school-for-my-daughter-in-a-segregated-city.html) about racial segregation in New York City schools and the impact it has on students as well as related historical topics and changes.
 
 ## Objectives

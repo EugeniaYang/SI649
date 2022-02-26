@@ -79,75 +79,10 @@ eco_line2 = alt.Chart(df3).mark_line().encode(
 )
 
 
-# (eco_line1 | eco_line2).show()
-# (((line1+ event_bar).resolve_scale(y='independent') | (line2+ event_bar).resolve_scale(y='independent'))  & (eco_line1|eco_line2)).resolve_scale(
-#     color='independent',
-#     x='independent'
-# ).show()
-
 vis2 = (eco_line1+ event_bar).resolve_scale(y='independent') |(eco_line2+ event_bar).resolve_scale(y='independent')
 
-# text = dot.transform_joinaggregate(
-#     max_budget = 'max(budget)',
-#     groupby = ['year']
-# ).transform_filter(
-#     'datum.budget == max(datum.max_budget)'
-# ).mark_text(
-#     align='center',
-#     baseline='bottom',
-#     dy=-3
-# ).encode(
-#     text='title:O',
-# )
-
-# vis1 = (dot+line+text).properties(
-#         width=800
-    # )
-
-# ## Visualization 2: heatmap with additional annotations
 
 
-#TODO: Replicate vis 2
-
-# data_chart = alt.Chart(movies_test).transform_filter(
-#     alt.datum.test_result != "dubious"
-# )
-
-# heatmap = data_chart.mark_rect().encode(
-#     x = alt.X('rating:Q', bin=True),
-#     y = 'test_result:N',
-#     color='count(title):Q'
-# )
-
-# text = data_chart.mark_text().encode(
-#     text = 'count(title):Q',
-#     x = alt.X('rating:Q',bin=True),
-#     y = 'test_result:N'
-# )
-    
-    
-
-# highlight = data_chart.transform_calculate(
-#     rating_over_9 = 'datum.rating > 9',
-# ).transform_joinaggregate(
-#     mark = 'sum(rating_over_9)',
-#     groupby = ['test_result']
-# ).mark_rect(
-#     color="red",
-#     strokeOpacity=1,
-#     strokeWidth=1,
-#     filled=False
-# ).transform_filter(
-#     alt.datum.mark > 0
-# ).encode(
-#     x = alt.X('rating:Q',bin=True),
-#     y = 'test_result:N'
-# )
-
-# vis2 = (heatmap+text+highlight).properties(width = 600)
-
-
-st.title("Visualizations by Eugenia Yang")
 st.sidebar.markdown("Select a visualization to display")
 option = st.sidebar.selectbox("Graduation and dropout rates 2003-2016",['By ethnicity','By economical status','Blog Post'])
 from pathlib import Path
@@ -157,8 +92,11 @@ def read_markdown_file(markdown_file):
 
 blog_post = read_markdown_file("Blog Post 38aea.md")
 if option == 'By economical status':
+    st.title("Visualizations by Eugenia Yang")
     st.write(vis2)
 elif option == 'By ethnicity':
+    st.title("Visualizations by Eugenia Yang")
     st.write(vis1)
 else :
     st.markdown(blog_post)
+    st.write(vis1,vis2)
