@@ -90,7 +90,7 @@ from pathlib import Path
 def read_markdown_file(markdown_file):
     return Path(markdown_file).read_text()
 
-blog_post = read_markdown_file("Blog Post 38aea.md")
+blog_post = read_markdown_file("readme.md")
 if option == 'By economical status':
     st.title("Visualizations by Eugenia Yang")
     st.write(vis2)
