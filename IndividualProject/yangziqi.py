@@ -7,7 +7,9 @@ import altair as alt
 import pandas as pd
 import numpy as np
 # print('Loading dataset')
-df = pd.read_excel('./2020-graduation_rates_public_citywide.xlsx',dtype={'% Grads': str},header=0,sheet_name='Ethnicity')
+import os
+
+df = pd.read_excel(os.getcwd()+'/2020-graduation_rates_public_citywide.xlsx',dtype={'% Grads': str},header=0,sheet_name='Ethnicity')
 df.drop(df.index[df['% Grads'] == 's'], inplace = True)
 df.drop(df.index[df['% Grads'] == '0.0' ], inplace = True)
 
